@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">IncidenceReport</string>
+    //Add_Layout
+    <string name="add_window_title">Añadir Incidencia</string>
+    <string name="add_title">Añadir Información</string>
+    <string name="add_description">Descripción:</string>
+    <string name="add_description_hint">Opcional</string>
+    <string name="add_button">Añadir</string>
+    //Edit_Layout
+    <string name="edit_window_title">Editar Incidencia</string>
+    <string name="edit_matricula">Matrícula:</string>
+    <string name="edit_fecha">Fecha:</string>
+    <string name="edit_desccription_hint">Descripción</string>
+    <string name="edit_button_save">Guardar</string>
+    //History_layout
+    <string name="history_window_title">Historial Incidencias</string>
+    //Login_layout
+    <string name="login_register_button">Iniciar Sesión</string>
+    <string name="login_signup_button">Crear Cuenta</string>
+    <string name="login_email">Correo</string>
+    <string name="login_password">Contraseña</string>
+    //Sign-up_layout
+    <string name="sign_user">Usuario</string>
+    <string name="sign_email">Correo</string>
+    <string name="sign_dni">DNI</string>
+    <string name="sign_pass1">Contraseña</string>
+    <string name="sign_pass2">Confirmar Contraseña</string>
+    <string name="sign_button">Registrar</string>
+    //Main
+    <string name="main_select">Seleccionar Incidente</string>
+    <string name="main_matricula">Introducir Matricula</string>
+    <string name="main_button_dict">Dictar</string>
+    <string name="main_button_next">Continuar</string>
+    //Menu
+    <string name="menu_history">Historial</string>
+    <string name="menu_config">Configuración</string>
+    <string name="menu_exit">Salir</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
