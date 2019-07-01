@@ -102,32 +102,7 @@ public class AddInfo extends AppCompatActivity {
         }
     }
 
-    public void updateCount(Incidence e) {
-        final Plate[] plate = new Plate[1];
-        final Incidence in = e;
 
-        firestoreDatabase.collection("plates").document(e.getMatricula())
-                .get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-            @Override
-            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                if (task.isSuccessful()) {
-                    DocumentSnapshot document = task.getResult();
-                    if (document.exists()) {
-                        plate[0] = document.toObject(Plate.class);
-                        plate[0].setCount();
-                        plate[0].setIncidence(in);
-                        firestoreDatabase.collection("plates").document(plate[0].getMatricula()).set(plate[0]);
-                    } else {
-                        plate[0] = new Plate(in);
-                        firestoreDatabase.collection("plates").document(plate[0].getMatricula()).set(plate[0]);
-                    }
-                } else {
-                    Toast.makeText(getApplicationContext(),
-                            "Se ha producido un error al añadir la incidencia..", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-    }
 
     public void addIncidence(String matricula,BadPractise practise, String description) {
         Double latitud = 0.0;
